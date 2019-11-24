@@ -1,11 +1,11 @@
 // Variables
     
-$color-background: #232323;
-$color-footer: #121212;
-$color-rock: #000000;
-$color-paper: #bdbbbb;
-$color-scissors: #ff4757;
-$color-symbols: #ffffff;
+$color-background: #2f3542;
+$color-hover-back: #3f4653;
+$color-footer: #232323;
+$color-extra: #22b415;
+$color-hover: #2a8b22;
+$color-body: #ffffff;
 
 $font-body: 'Montserrat', sans-serif;
 
@@ -13,12 +13,13 @@ $font-body: 'Montserrat', sans-serif;
 
 body {
     margin: 0;
+    padding: 0;
     text-align: center;
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.7;
     background: $color-background;
     font-family: $font-body;
-    color: $color-symbols;
+    color: $color-body;
     letter-spacing: 1px;
 }
 
@@ -31,95 +32,70 @@ body {
     margin: auto;
 }
 
-.section {
-    padding: 50px 0;
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Header */
 
 .header {
-    padding: 25px 0;
-    background: $color-background;
-    border-bottom: 2px solid $color-symbols;
+    padding: 60px 0;
 }
 
 .header__title {
-    margin: 0;
-    font-size: 42px;
+    font-size: 36px;
+    color: $color-extra;
     letter-spacing: 3px;
-}
-
-.rock {
-    color: $color-rock;
-}
-
-.paper {
-    color: $color-paper;
-}
-
-.scissors {
-    color: $color-scissors;
 }
 
 /* Game */
 
-.game__describe {
-    border: solid 1px $color-paper;
-    box-shadow: 0 0 2px 2px $color-paper;
-    color: $color-paper;
-    margin: 40px 20px;
-    padding: 5px;
+.game__box {
+    flex: 0 0 30%;
+    border: 2px solid $color-body;
+    padding: 40px;
+    margin: 10px;
+    &:hover {
+        box-shadow: 0 0 2px 2px $color-hover;
+        background: $color-hover-back;
+    }
     ul {
-        list-style-type: none;
+        list-style-type: square;
         margin: 0; 
         padding: 0;
-    }
-} 
-
-.game__result {
-    margin: 50px 0;
-    padding: 5px;
-    border: solid 1px $color-paper;
-    box-shadow: 0 0 2px 2px $color-paper;
-    color: $color-paper;
-    font-size: 20px;
-    height: 200px;
+        li {
+            margin-left: 25px;
+        }
+    } 
 }
 
-.btn {
-    background: inherit;
-    height: 120px;
-    width: 120px;
-    margin: 20px 40px;
-    border: solid 1px $color-paper;
-    box-shadow: 0 0 2px 2px $color-paper;
-    border-radius: 50%;
-    text-decoration: none;
-    &:hover {
-        cursor: pointer;
-    }
-    i {
-        font-size: 75px;
-        color: $color-symbols;
+.game__rules {
+    text-align: left;
+}
+
+.game__box--element {
+    margin: 20px 0;
+    button {
+        height: 200px;
+        width: 200px;
+        font-size: 100px;
+        border-radius: 50%;
+        border: none;
+        background: $color-extra;
+        color: $color-body;
+        outline: 0;
+        &:hover {
+            background: $color-hover;
+            cursor: pointer;
+        }
     }
 }
 
-.btn-rock {
-    &:hover {
-        background: $color-rock;
-    }
-}
-
-.btn-paper {
-    &:hover {
-        background: $color-paper;
-    }
-}
-
-.btn-scissors {
-    &:hover {
-        background: $color-scissors;
-    }
+.game__box--messages {
+    font-size: 24px;
+    color: $color-extra;
 }
 
 /* Footer */

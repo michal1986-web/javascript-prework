@@ -10,36 +10,46 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<h1 class="header__title"><span class="rock">Kamień </span><span class="paper">Papier </span><span class="scissors">Nożyce </span></h1>
+			<h1 class="header__title">Kamień Papier Nożyce</h1>
 		</div>	
 	</header>
 
 	<section class="game">	
 		<div class="container">
-			<div class="game__describe">
-				<p>Gra <span class="rock">Kamień </span><span class="paper">Papier </span><span class="scissors">Nożyce </span> składa się z kolejnych tur. W każdej turze gracz wybiera odpowiedni symbol. Komputer wybiera swój symbol losowo. Mocniejszy symbol wygrywa. Wylosowanie tych samych symboli to remis. Poniżej hierarchia symboli, które wygrywają w poszczególnych turach.</p> 
-				<ul>
-					<li><span class="stone">Kamień </span>jest silniejszy od papieru, ponieważ je tępi</li>
-					<li><span class="paper">Papier </span>jest silniejszy od kamienia, ponieważ go owija</li>
-					<li><span class="scissors">Nożyce </span>są silniejsze od papieru, ponieważ go tną</li>
-				</ul>
-			</div>
-			<h2>Wybierz symbol:</h2>
-			<div id="buttons">
-				<button id="button-rock" class="btn btn-rock"><i class="far fa-hand-rock"></i></button>
-				<button id="button-paper" class="btn btn-paper"><i class="far fa-hand-paper"></i></button>
-				<button id="button-scissors" class="btn btn-scissors"><i class="far fa-hand-scissors"></i></button>
-			</div>
-			<div class="game__result">
-				<div id="messages" class="game__answer">Wynik gry: </div>
-				<div id="result"></div>
-			</div>
+			<div class="wrapper">
+				<div class="game__box game__rules">
+					<h2>Zasady gry</h2>
+					<p>Gra <span class="rock">Kamień </span><span class="paper">Papier </span><span class="scissors">Nożyce </span> składa się z kolejnych tur. W każdej turze gracz wybiera odpowiedni symbol. Komputer wybiera swój symbol losowo. Mocniejszy symbol wygrywa. Wylosowanie tych samych symboli to remis. Poniżej hierarchia symboli, które wygrywają w poszczególnych turach.</p> 
+					<ul>
+						<li>Kamień jest silniejszy od papieru, ponieważ je tępi</li>
+						<li>Papier jest silniejszy od kamienia, ponieważ go owija</li>
+						<li>Nożyce są silniejsze od papieru, ponieważ go tną</li>
+					</ul>
+				</div>
+				<div class="game__box" id="buttons">
+					<h2>Wybierz symbol</h2>
+					<div class="game__box--element">
+						<button id="button-rock" class="game__box--btn"><i class="far fa-hand-rock"></i></button>
+					</div>
+					<div class="game__box--element">
+						<button id="button-paper" class="game__box--btn"><i class="far fa-hand-paper"></i></button>
+					</div>
+					<div class="game__box--element">
+						<button id="button-scissors" class="game__box--btn"><i class="far fa-hand-scissors"></i></button>
+					</div>
+				</div>
+				<div class="game__box">
+					<h2>Wynik gry</h2>
+					<div id="messages" class="game__box--messages"></div>
+					<div id="result" class="game__box--result"></div>
+				</div>
+			</div>	
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="container">
-			&copy; Michał Grzegorczyk My firs game JS 2019
+			&copy; Michał Grzegorczyk My first game JS 2019
 		</div>
 	</footer>
 

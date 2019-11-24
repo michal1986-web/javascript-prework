@@ -1,10 +1,11 @@
 /* Global */
 body {
   margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 17px;
-  line-height: 1.5;
-  background: #232323;
+  line-height: 1.7;
+  background: #2f3542;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   letter-spacing: 1px;
@@ -19,95 +20,82 @@ body {
   margin: auto;
 }
 
-.section {
-  padding: 50px 0;
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 /* Header */
 .header {
-  padding: 25px 0;
-  background: #232323;
-  border-bottom: 2px solid #ffffff;
+  padding: 60px 0;
 }
 
 .header__title {
-  margin: 0;
-  font-size: 42px;
+  font-size: 36px;
+  color: #22b415;
   letter-spacing: 3px;
 }
 
-.rock {
-  color: #000000;
-}
-
-.paper {
-  color: #bdbbbb;
-}
-
-.scissors {
-  color: #ff4757;
-}
-
 /* Game */
-.game__describe {
-  border: solid 1px #bdbbbb;
-  box-shadow: 0 0 2px 2px #bdbbbb;
-  color: #bdbbbb;
-  margin: 40px 20px;
-  padding: 5px;
+.game__box {
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+  border: 2px solid #ffffff;
+  padding: 40px;
+  margin: 10px;
 }
 
-.game__describe ul {
-  list-style-type: none;
+.game__box:hover {
+  box-shadow: 0 0 2px 2px #2a8b22;
+  background: #3f4653;
+}
+
+.game__box ul {
+  list-style-type: square;
   margin: 0;
   padding: 0;
 }
 
-.game__result {
-  margin: 50px 0;
-  padding: 5px;
-  border: solid 1px #bdbbbb;
-  box-shadow: 0 0 2px 2px #bdbbbb;
-  color: #bdbbbb;
-  font-size: 20px;
+.game__box ul li {
+  margin-left: 25px;
+}
+
+.game__rules {
+  text-align: left;
+}
+
+.game__box--element {
+  margin: 20px 0;
+}
+
+.game__box--element button {
   height: 200px;
-}
-
-.btn {
-  background: inherit;
-  height: 120px;
-  width: 120px;
-  margin: 20px 40px;
-  border: solid 1px #bdbbbb;
-  box-shadow: 0 0 2px 2px #bdbbbb;
+  width: 200px;
+  font-size: 100px;
   border-radius: 50%;
-  text-decoration: none;
+  border: none;
+  background: #22b415;
+  color: #ffffff;
+  outline: 0;
 }
 
-.btn:hover {
+.game__box--element button:hover {
+  background: #2a8b22;
   cursor: pointer;
 }
 
-.btn i {
-  font-size: 75px;
-  color: #ffffff;
-}
-
-.btn-rock:hover {
-  background: #000000;
-}
-
-.btn-paper:hover {
-  background: #bdbbbb;
-}
-
-.btn-scissors:hover {
-  background: #ff4757;
+.game__box--messages {
+  font-size: 24px;
+  color: #22b415;
 }
 
 /* Footer */
 .footer {
-  background: #121212;
+  background: #232323;
   padding: 10px;
   position: absolute;
   width: 100%;
