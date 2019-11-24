@@ -1,0 +1,116 @@
+/* Global */
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5;
+  background: #232323;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* Header */
+.header {
+  padding: 25px 0;
+  background: #232323;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+.rock {
+  color: #000000;
+}
+
+.paper {
+  color: #bdbbbb;
+}
+
+.scissors {
+  color: #ff4757;
+}
+
+/* Game */
+.game__describe {
+  border: solid 1px #bdbbbb;
+  box-shadow: 0 0 2px 2px #bdbbbb;
+  color: #bdbbbb;
+  margin: 40px 20px;
+  padding: 5px;
+}
+
+.game__describe ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game__result {
+  margin: 50px 0;
+  padding: 5px;
+  border: solid 1px #bdbbbb;
+  box-shadow: 0 0 2px 2px #bdbbbb;
+  color: #bdbbbb;
+  font-size: 20px;
+  height: 200px;
+}
+
+.btn {
+  background: inherit;
+  height: 120px;
+  width: 120px;
+  margin: 20px 40px;
+  border: solid 1px #bdbbbb;
+  box-shadow: 0 0 2px 2px #bdbbbb;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn i {
+  font-size: 75px;
+  color: #ffffff;
+}
+
+.btn-rock:hover {
+  background: #000000;
+}
+
+.btn-paper:hover {
+  background: #bdbbbb;
+}
+
+.btn-scissors:hover {
+  background: #ff4757;
+}
+
+/* Footer */
+.footer {
+  background: #121212;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

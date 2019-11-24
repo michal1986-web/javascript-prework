@@ -1,0 +1,133 @@
+// Variables
+    
+$color-background: #232323;
+$color-footer: #121212;
+$color-rock: #000000;
+$color-paper: #bdbbbb;
+$color-scissors: #ff4757;
+$color-symbols: #ffffff;
+
+$font-body: 'Montserrat', sans-serif;
+
+/* Global */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+    background: $color-background;
+    font-family: $font-body;
+    color: $color-symbols;
+    letter-spacing: 1px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;   
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+/* Header */
+
+.header {
+    padding: 25px 0;
+    background: $color-background;
+    border-bottom: 2px solid $color-symbols;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+.rock {
+    color: $color-rock;
+}
+
+.paper {
+    color: $color-paper;
+}
+
+.scissors {
+    color: $color-scissors;
+}
+
+/* Game */
+
+.game__describe {
+    border: solid 1px $color-paper;
+    box-shadow: 0 0 2px 2px $color-paper;
+    color: $color-paper;
+    margin: 40px 20px;
+    padding: 5px;
+    ul {
+        list-style-type: none;
+        margin: 0; 
+        padding: 0;
+    }
+} 
+
+.game__result {
+    margin: 50px 0;
+    padding: 5px;
+    border: solid 1px $color-paper;
+    box-shadow: 0 0 2px 2px $color-paper;
+    color: $color-paper;
+    font-size: 20px;
+    height: 200px;
+}
+
+.btn {
+    background: inherit;
+    height: 120px;
+    width: 120px;
+    margin: 20px 40px;
+    border: solid 1px $color-paper;
+    box-shadow: 0 0 2px 2px $color-paper;
+    border-radius: 50%;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
+    i {
+        font-size: 75px;
+        color: $color-symbols;
+    }
+}
+
+.btn-rock {
+    &:hover {
+        background: $color-rock;
+    }
+}
+
+.btn-paper {
+    &:hover {
+        background: $color-paper;
+    }
+}
+
+.btn-scissors {
+    &:hover {
+        background: $color-scissors;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: $color-footer;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

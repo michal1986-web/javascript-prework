@@ -4,16 +4,45 @@
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+	<header class="header">
+		<div class="container">
+			<h1 class="header__title"><span class="rock">Kamień </span><span class="paper">Papier </span><span class="scissors">Nożyce </span></h1>
+		</div>	
+	</header>
+
+	<section class="game">	
+		<div class="container">
+			<div class="game__describe">
+				<p>Gra <span class="rock">Kamień </span><span class="paper">Papier </span><span class="scissors">Nożyce </span> składa się z kolejnych tur. W każdej turze gracz wybiera odpowiedni symbol. Komputer wybiera swój symbol losowo. Mocniejszy symbol wygrywa. Wylosowanie tych samych symboli to remis. Poniżej hierarchia symboli, które wygrywają w poszczególnych turach.</p> 
+				<ul>
+					<li><span class="stone">Kamień </span>jest silniejszy od papieru, ponieważ je tępi</li>
+					<li><span class="paper">Papier </span>jest silniejszy od kamienia, ponieważ go owija</li>
+					<li><span class="scissors">Nożyce </span>są silniejsze od papieru, ponieważ go tną</li>
+				</ul>
+			</div>
+			<h2>Wybierz symbol:</h2>
+			<div id="buttons">
+				<button id="button-rock" class="btn btn-rock"><i class="far fa-hand-rock"></i></button>
+				<button id="button-paper" class="btn btn-paper"><i class="far fa-hand-paper"></i></button>
+				<button id="button-scissors" class="btn btn-scissors"><i class="far fa-hand-scissors"></i></button>
+			</div>
+			<div class="game__result">
+				<div id="messages" class="game__answer">Wynik gry: </div>
+				<div id="result"></div>
+			</div>
 		</div>
-		<div id="messages"></div>
-	</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			&copy; Michał Grzegorczyk My firs game JS 2019
+		</div>
+	</footer>
+
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
